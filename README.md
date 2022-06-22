@@ -1,11 +1,8 @@
-# Boostack.io
-
 ## Project setup
 
 ```
 npm install
 
-Please check out https://docs.boostack.io
 ```
 
 ### Compiles and hot-reloads for development
