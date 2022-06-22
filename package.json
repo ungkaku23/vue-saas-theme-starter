@@ -1,0 +1,111 @@
+{
+  "name": "boostack",
+  "version": "0.1.0",
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
+  "private": true,
+  "scripts": {
+    "start": "set NODE_ENV=production&& node server/index.js",
+    "serve": "vue-cli-service serve",
+    "build": "set NODE_ENV=production&& vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dev": "concurrently \"set NODE_ENV=development\" \"nodemon server/index.js\" \"npm run serve\" "
+  },
+  "dependencies": {
+    "@mdi/font": "^4.9.95",
+    "@vue-stripe/vue-stripe": "^4.0.3",
+    "aws-sdk": "^2.827.0",
+    "axios": "^0.21.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.18.1",
+    "bootstrap-vue-treeview": "^1.0.8",
+    "chart.js": "^2.9.4",
+    "chartist": "^0.11.4",
+    "compression": "^1.7.4",
+    "connect-history-api-fallback": "^1.6.0",
+    "core-js": "^3.7.0",
+    "dotenv": "^8.2.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "flag-icon-css": "^3.5.0",
+    "font-awesome": "^4.7.0",
+    "form-data": "^3.0.0",
+    "fs": "0.0.1-security",
+    "handlebars": "^4.7.6",
+    "helmet": "^4.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^5.10.11",
+    "multer": "^1.4.2",
+    "path": "^0.12.7",
+    "sharp": "^0.27.0",
+    "simple-line-icons": "^2.5.5",
+    "socket.io": "^3.0.3",
+    "socket.io-client": "^3.0.3",
+    "stripe": "^8.121.0",
+    "ti-icons": "^0.1.2",
+    "uninstall": "0.0.0",
+    "uuid": "^8.3.2",
+    "vue": "^2.6.12",
+    "vue-chartist": "^2.3.1",
+    "vue-chartjs": "^3.5.1",
+    "vue-progress": "^0.2.1",
+    "vue-radial-progress": "^0.3.2",
+    "vue-router": "^3.4.8",
+    "vue-runtime-helpers": "^1.1.2",
+    "vue-scrollto": "^2.20.0",
+    "vue-snotify": "^3.2.1",
+    "vue-sweetalert2": "^4.1.1",
+    "vuelidate": "^0.7.6",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.8",
+    "@vue/cli-plugin-eslint": "^4.5.8",
+    "@vue/cli-service": "^4.5.8",
+    "babel-eslint": "^10.1.0",
+    "compass-mixins": "^0.12.10",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "css-loader": "^3.6.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "ip": "^1.1.5",
+    "morgan": "^1.10.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "author": "Boostack.io",
+  "license": "ISC"
+}
